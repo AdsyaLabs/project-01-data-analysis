@@ -39,3 +39,7 @@ project-01/
 pip install -r requirements.txt
 jupyter notebook notebooks/02-titanic-eda.ipynb
 ```
+
+## Visualisasi
+
+![EDA Charts](outputs/eda-charts.png)
