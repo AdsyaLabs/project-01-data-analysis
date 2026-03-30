@@ -1,45 +1,52 @@
-# Titanic EDA — Exploratory Data Analysis
+# Titanic Survival Predictor
 
-## Deskripsi Project
+Web app yang memprediksi peluang selamat penumpang Titanic berdasarkan input user.
 
-Analisis eksplorasi data (EDA) pada dataset Titanic untuk memahami
-faktor-faktor yang mempengaruhi peluang selamat penumpang.
+**Use case:** Membantu memahami faktor-faktor yang mempengaruhi survival rate penumpang Titanic melalui ML model yang interaktif.
 
-## Dataset
+## Live Demo
 
-- Sumber: Kaggle — Titanic Dataset
-- 891 baris, 12 kolom
-- Target variable: `Survived` (0 = tidak selamat, 1 = selamat)
+🚀 [Deploy link akan ditambahkan setelah deployment]
 
-## Tools
+## Tech Stack
 
-- Python, Pandas, NumPy, Matplotlib, Seaborn
+- Python, scikit-learn (Logistic Regression)
+- Streamlit (web app)
+- Pandas, NumPy (data processing)
+- Matplotlib, Seaborn (EDA visualization)
 
-## Key Findings
+## Model Performance
 
-- Wanita memiliki survival rate jauh lebih tinggi daripada pria
-- Penumpang kelas 1 (first class) lebih banyak yang selamat
-- Harga tiket (Fare) berkorelasi positif dengan peluang selamat
-- 177 missing values pada kolom Age, 687 pada kolom Cabin
+- **Accuracy:** 81%
+- **Algorithm:** Logistic Regression
+- **Features:** Pclass, Sex, Age, SibSp, Parch, Fare
 
-## Struktur Repository
+## Key Findings (EDA)
+
+- Wanita memiliki survival rate jauh lebih tinggi dari pria
+- Penumpang kelas 1 lebih banyak yang selamat
+- Harga tiket berkorelasi positif dengan peluang selamat
+
+## Cara Menjalankan Lokal
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+## Struktur Project
 
 ```
 project-01/
 ├── data/               # Dataset Titanic
-├── notebooks/          # Jupyter notebooks EDA
-├── outputs/            # Grafik hasil analisis
-├── src/                # Script Python
-└── requirements.txt    # Dependencies
+├── notebooks/          # EDA dan model training
+├── model/              # Saved model (.pkl)
+├── outputs/            # Grafik EDA
+├── src/                # Training scripts
+├── app.py              # Streamlit app
+└── requirements.txt
 ```
 
-## Cara Menjalankan
-
-```bash
-pip install -r requirements.txt
-jupyter notebook notebooks/02-titanic-eda.ipynb
-```
-
-## Visualisasi
+## Visualisasi EDA
 
 ![EDA Charts](outputs/eda-charts.png)
