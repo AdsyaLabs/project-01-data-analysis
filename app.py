@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # Load model
-with open('model/titanic_model.pkl', 'rb') as f:
+with open('titanic_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # --- UI ---
