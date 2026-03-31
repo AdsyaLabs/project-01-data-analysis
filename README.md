@@ -6,7 +6,7 @@ Web app yang memprediksi peluang selamat penumpang Titanic berdasarkan input use
 
 ## Live Demo
 
-🚀 [Deploy link akan ditambahkan setelah deployment]
+🚀 [https://huggingface.co/spaces/AdsyaDev/titanic-survival-predictor]
 
 ## Tech Stack
 
